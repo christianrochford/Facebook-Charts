@@ -7,22 +7,21 @@ window.fbAsyncInit = function() {
     xfbml: true
   });
   FB.login(function() {}, {
-    scope: 'publish_actions'
+    scope: 'manage_pages,read_insights'
   });
 
   // User Login
   Login = function() {
     FB.login(function(response) {
       if (response.authResponse) {
-        console.log(response);
         getUserInfo();
         // Get user access token
-        accessToken = response.authResponse.accessToken;
+        userAccessToken = response.authResponse.accessToken;
       } else {
         console.log('User cancelled login or did not fully authorize.');
       }
     }, {
-      scope: 'email,user_photos,user_videos'
+      scope: 'manage_pages,read_insights'
     });
     $('#login').hide();
     $('#wrapper').fadeIn(300);
@@ -39,8 +38,8 @@ window.fbAsyncInit = function() {
       result = '';
       pageAT = '';
       pages = [];
-      fbUrl = 'https://graph.facebook.com/me';
-      url = fbUrl + '/accounts?access_token=' + 'CAACEdEose0cBACwkE4811YLjsY8Si3b88HdwLgu8ZBy3sckjiBMlwV95WKs3pLInkGGExBbfOpbMWcjz3ZCJytUAy9wPZC8s3zBsf9jEc5v0P4DWUzA8gcPSB0q0wORZCnxSjgJ0ROwNZCjZCiNS3YY4N6SzrvJMUYK6ZAZAxnYvljJcWv8MrEHcCyMx0Cl2StoZD';
+      fbUrl = 'https://graph.facebook.com/';
+      url = fbUrl + userID +'/accounts?access_token=' + userAccessToken;
       console.log(url);
       $.ajax({
         async: false,
@@ -53,62 +52,11 @@ window.fbAsyncInit = function() {
         }
       })
       // Assign managed pages and their access tokens to the pages array
+      console.log(result);
       for(i=0, len=result.data.length; i<len; i++){
-        pages.push({pageName: result.data[i].name, access_token: result.data[i].access_token});
+        pages.push({pageName: result.data[i].name, access_token: result.data[i].access_token, pageID: result.data[i].id});
       }
-    });
-  }
-
-  getPageInfo = function() {
-    var account = '/' + pageID;
-    console.log(account);
-    FB.api(account, function(response) {
-      id = response.id;
-      if (pageID != 'undefined') {
-        var str = '<div id="name"><p>Profile : ' + response.name + '</p>';
-      }
-      str += '<p id="id">id: ' + response.id + '</p>';
-      str += '<input id="getPosts" class="button" type="button" value="Get Posts">';
-      str += '<input id="logOut" class="button" type="button" value="Logout">';
-      document.getElementById("user").innerHTML = str;
-    });
-  }
-
-  getPosts = function() {
-    console.log(accessToken);
-    var query = +pageID + '/insights/?method=GET&format=json&suppress_http_code=1&access_token=' + accessToken;
-    console.log(query);
-    document.getElementById("feed").innerHTML = '';
-    FB.api(query, function(response1) {
-      console.log(response1);
-      var divContainer = $('#feed');
-      var str = '';
-      for (i = 0; i < response1.data.length; i++) {
-        if (response1.data[i].status_type == 'shared_story') {
-          if (response1.data[i].name) {
-            str += '<p class="post">' + response1.data[i].name + '</p>';
-          }
-          if (response1.data[i].likes) {
-            str += '<p class="like">' + response1.data[i].likes.data.length + '</p>';
-          }
-          if (!response1.data[i].likes) {
-            str += '<p class="like">0</p>';
-          }
-          document.getElementById("feed").innerHTML = str;
-        }
-        if (response1.data[i].status_type == 'added_photos') {
-          if (response1.data[i].message) {
-            str += '<p class="post">' + response1.data[i].message + '</p>';
-          }
-          if (response1.data[i].likes) {
-            str += '<p class="like">' + response1.data[i].likes.data.length + '</p>';
-          }
-          if (!response1.data[i].likes) {
-            str += '<p class="like">0</p>';
-          }
-          document.getElementById("feed").innerHTML = str;
-        }
-      }
+      console.log(pages);
     });
   }
 
@@ -118,31 +66,43 @@ window.fbAsyncInit = function() {
     });
   }
 
-  // Get Facebook page id
+  // Get Facebook page insights
   data = '';
-  pageID = '';
   $(document).ready(function() {
     $('#submit').on('click', function() {
       fbUrl = 'https://graph.facebook.com/';
       pageName = $('#input').val();
+      pageID = '';
       accessToken = '';
       console.log(pages);
+      // Check if input value exists in pages array, if so assign pageID and accessToken
       for(i=0, len=pages.length; i<len; i++){
         if(pageName == pages[i].pageName){
           accessToken = pages[i].access_token;
+          pageID = pages[i].pageID;
         } else {
           console.log('page does not exist, please enter again');
         }
       }
-      insight = '/insights/?method=GET&format=json&suppress_http_code=1&access_token=';
-      url = fbUrl + pageName + insight + accessToken;
+      getPermToken = 'https://graph.facebook.com/oauth/access_token?client_id=742372512461807&client_secret=46ec273f59ca4891c8ece95e2bec105e&grant_type=fb_exchange_token&fb_exchange_token=' + userAccessToken;
+      $.ajax({
+        async: false,
+        url: getPermToken,
+        type: 'GET',
+        data: '',
+        success: function(response) {
+          permToken = response;
+        }
+      })
+      insight = '/insights/?method=GET&format=json&suppress_http_code=1&';
+      // Build url based on data obtained from pages array
+      url = fbUrl + pageID + insight + permToken;
       console.log(url);
       $.ajax({
         async: false,
         url: url,
         type: 'GET',
         data: '',
-        dataType: 'json',
         success: function(response) {
           data = response;
         }
@@ -151,15 +111,9 @@ window.fbAsyncInit = function() {
     })
   })
 
-  $(document).ready(function() {
-    if ($('#id')) {
-      getPageInfo();
-    }
-  })
-
   // Logout event
   $(document).ready(function() {
-    $(document).on('click', '#logOut', function() {
+    $('#logOut').on('click', function() {
       Logout();
       $('#wrapper').fadeOut(300);
       $('#login').fadeIn(300);
