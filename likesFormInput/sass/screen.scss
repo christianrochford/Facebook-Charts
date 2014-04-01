@@ -1,0 +1,144 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$white: #fff;
+$orange: #ff3300;
+
+#facebookfeed{
+  width: 500px;
+  float: left;
+  margin: 50px 0 0 10%;
+  p#label{
+    display: block;
+    background-color: $orange;
+    width: 249px;
+    height: 30px;
+    padding: 10px 0;
+    font-family: Helvetica;
+    font-size: 2em;
+    color: $white;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  #fbBrandsTable, #fbLikesTable{
+    width: 50%;
+    float: left;
+    li, input{
+      height: 46px;
+      width: 244px;
+      font-family: Helvetica;
+      font-size: 1em;
+      text-transform: lowercase;
+      text-align: center;
+      display: block;
+      float: left;
+      margin: 0;
+      padding: 6px 0;
+      border: 1px solid $orange;
+      margin: 1px 2px;
+    }
+    &:nth-child(2n+1) td{
+        background-color: rgba(255,51,0,0.1);
+    }
+    li{
+      padding: 6px 0;
+      line-height: 3em;
+    }
+    li.label{
+      background-color: $orange;
+      height: 33px;
+      width: 247px;
+      font-family: Helvetica;
+      font-size: 2em;
+      color: $white;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1.2em;
+      border-bottom: none;
+      padding: 8px 0;
+      margin: 0 0 0 1px;
+    }
+    .input-button{
+      &:hover, &:focus, &:active{
+        color: $orange;
+        background-color: $white;
+      }
+    }
+  }
+  #add{
+    width: 244px;
+    margin: 1px 3px 1px 2px;
+    padding: 9px 0;
+  }
+  #fbBrandsTable{
+    width: 50%;
+    float: left;
+  }
+  #fbLikesTable{
+    margin-top: -50px;
+  }
+}
+#button-wrap{
+  width: 251px;
+  float: left;
+}
+
+#dashboard{
+  width: 40%;
+  float: left;
+  margin: 50px 0 0 10%;
+  label{
+    font-family: Helvetica;
+    font-size: 1em;
+    color: $orange;
+    text-transform: uppercase;
+  }
+  .google-visualization-controls-stringfilter INPUT{
+    background-color: $orange;
+    border: none;
+    color: $white;
+    &:focus{
+      border-color: $white;
+    }
+  }
+}
+
+.button, .input-button{
+    display: block;
+    width: 224px;
+    height: 30px;
+    float: left;
+    margin: 0 2px 1px;
+    float: left;
+    font-family: Helvetica;
+    color: $white;
+    background-color: $orange;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 2em;
+    padding: 10px;
+    border: 1px solid $orange;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+    &:hover, &:focus, &:active{
+      color: $orange;
+      background-color: $white;
+    }
+  }
+.input-button{
+  color: $orange;
+  background-color: $white;
+  &:hover, &:focus, &:active{
+    color: $orange;
+    background-color: $white;
+  }
+}

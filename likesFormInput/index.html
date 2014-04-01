@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Working with Different Chart Types</title>
+  <link rel="stylesheet" href="stylesheets/screen.css">
+</head>
+<body>
+
+  <!-- Facebook Data-->
+  <div id="facebookfeed">
+    <p id="label">Brand</p>
+    <form id="fbBrandsTable">
+      <input class="input-button" type="text" placeholder="enter brandname here" name="input0" id="input0">
+    </form>
+    <ul id="fbLikesTable">
+      <li class="label">FB-Likes</li>
+    </ul>
+    <div id="button-wrap">
+      <a href="#" id="add" class="button">Add More</a>
+      <a id="clear" class="button" href="#">Clear</a>
+      <a id="save" class="button" href="#">Create Chart</a>
+    </div>
+  </div>
+
+  <!-- Facebook Likes Chart-->
+  <div id="dashboard">
+    <div id="stringFilter"></div>
+    <div id="fbLikesChart"></div>
+  </div>
+  
+  <!- Load Facebook SDK ->
+  <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '742372512461807',
+          status     : true,
+          xfbml      : true
+        });
+        FB.login(function(){}, {scope: 'publish_actions'});
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/all.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://www.google.com/jsapi"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

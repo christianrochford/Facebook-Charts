@@ -1,0 +1,223 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 11, ../sass/screen.scss */
+#facebookfeed {
+  width: 500px;
+  float: left;
+  margin: 50px 0 0 10%;
+}
+/* line 15, ../sass/screen.scss */
+#facebookfeed p#label {
+  display: block;
+  background-color: #ff3300;
+  width: 249px;
+  height: 30px;
+  padding: 10px 0;
+  font-family: Helvetica;
+  font-size: 2em;
+  color: white;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 28, ../sass/screen.scss */
+#facebookfeed #fbBrandsTable, #facebookfeed #fbLikesTable {
+  width: 50%;
+  float: left;
+}
+/* line 31, ../sass/screen.scss */
+#facebookfeed #fbBrandsTable li, #facebookfeed #fbBrandsTable input, #facebookfeed #fbLikesTable li, #facebookfeed #fbLikesTable input {
+  height: 46px;
+  width: 244px;
+  font-family: Helvetica;
+  font-size: 1em;
+  text-transform: lowercase;
+  text-align: center;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 6px 0;
+  border: 1px solid #ff3300;
+  margin: 1px 2px;
+}
+/* line 45, ../sass/screen.scss */
+#facebookfeed #fbBrandsTable:nth-child(2n+1) td, #facebookfeed #fbLikesTable:nth-child(2n+1) td {
+  background-color: rgba(255, 51, 0, 0.1);
+}
+/* line 48, ../sass/screen.scss */
+#facebookfeed #fbBrandsTable li, #facebookfeed #fbLikesTable li {
+  padding: 6px 0;
+  line-height: 3em;
+}
+/* line 52, ../sass/screen.scss */
+#facebookfeed #fbBrandsTable li.label, #facebookfeed #fbLikesTable li.label {
+  background-color: #ff3300;
+  height: 33px;
+  width: 247px;
+  font-family: Helvetica;
+  font-size: 2em;
+  color: white;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.2em;
+  border-bottom: none;
+  padding: 8px 0;
+  margin: 0 0 0 1px;
+}
+/* line 68, ../sass/screen.scss */
+#facebookfeed #fbBrandsTable .input-button:hover, #facebookfeed #fbBrandsTable .input-button:focus, #facebookfeed #fbBrandsTable .input-button:active, #facebookfeed #fbLikesTable .input-button:hover, #facebookfeed #fbLikesTable .input-button:focus, #facebookfeed #fbLikesTable .input-button:active {
+  color: #ff3300;
+  background-color: white;
+}
+/* line 74, ../sass/screen.scss */
+#facebookfeed #add {
+  width: 244px;
+  margin: 1px 3px 1px 2px;
+  padding: 9px 0;
+}
+/* line 79, ../sass/screen.scss */
+#facebookfeed #fbBrandsTable {
+  width: 50%;
+  float: left;
+}
+/* line 83, ../sass/screen.scss */
+#facebookfeed #fbLikesTable {
+  margin-top: -50px;
+}
+
+/* line 87, ../sass/screen.scss */
+#button-wrap {
+  width: 251px;
+  float: left;
+}
+
+/* line 92, ../sass/screen.scss */
+#dashboard {
+  width: 40%;
+  float: left;
+  margin: 50px 0 0 10%;
+}
+/* line 96, ../sass/screen.scss */
+#dashboard label {
+  font-family: Helvetica;
+  font-size: 1em;
+  color: #ff3300;
+  text-transform: uppercase;
+}
+/* line 102, ../sass/screen.scss */
+#dashboard .google-visualization-controls-stringfilter INPUT {
+  background-color: #ff3300;
+  border: none;
+  color: white;
+}
+/* line 106, ../sass/screen.scss */
+#dashboard .google-visualization-controls-stringfilter INPUT:focus {
+  border-color: white;
+}
+
+/* line 112, ../sass/screen.scss */
+.button, .input-button {
+  display: block;
+  width: 224px;
+  height: 30px;
+  float: left;
+  margin: 0 2px 1px;
+  float: left;
+  font-family: Helvetica;
+  color: white;
+  background-color: #ff3300;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 2em;
+  padding: 10px;
+  border: 1px solid #ff3300;
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+/* line 132, ../sass/screen.scss */
+.button:hover, .button:focus, .button:active, .input-button:hover, .input-button:focus, .input-button:active {
+  color: #ff3300;
+  background-color: white;
+}
+
+/* line 137, ../sass/screen.scss */
+.input-button {
+  color: #ff3300;
+  background-color: white;
+}
+/* line 140, ../sass/screen.scss */
+.input-button:hover, .input-button:focus, .input-button:active {
+  color: #ff3300;
+  background-color: white;
+}
