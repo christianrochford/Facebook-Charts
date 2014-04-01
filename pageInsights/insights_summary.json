@@ -1,0 +1,226 @@
+// Summary of returned Insights object
+
+data: [{id:PAGE_ID/insights/page_fan_adds_unique/day, name:page_fan_adds_unique, period:day,…},…]
+0: {id:PAGE_ID/insights/page_fan_adds_unique/day, name:page_fan_adds_unique, period:day,…}
+1: {id:PAGE_ID/insights/page_fan_adds/day, name:page_fan_adds, period:day,…}
+2: {id:PAGE_ID/insights/page_fan_adds_by_paid_non_paid_unique/day,…}
+3: {id:PAGE_ID/insights/page_fan_removes_unique/day, name:page_fan_removes_unique, period:day,…}
+4: {id:PAGE_ID/insights/page_fan_removes/day, name:page_fan_removes, period:day,…}
+5: {id:PAGE_ID/insights/page_views_login_unique/day, name:page_views_login_unique, period:day,…}
+6: {id:PAGE_ID/insights/page_views_login_unique/week, name:page_views_login_unique, period:week,…}
+7: {id:PAGE_ID/insights/page_views_login/day, name:page_views_login, period:day,…}
+8: {id:PAGE_ID/insights/page_views_login/week, name:page_views_login, period:week,…}
+9: {id:PAGE_ID/insights/page_views_logout/day, name:page_views_logout, period:day,…}
+10: {id:PAGE_ID/insights/page_views/day, name:page_views, period:day,…}
+11: {id:PAGE_ID/insights/page_tab_views_login_top_unique/day, name:page_tab_views_login_top_unique,…}
+12: {id:PAGE_ID/insights/page_tab_views_login_top_unique/week, name:page_tab_views_login_top_unique,…}
+13: {id:PAGE_ID/insights/page_tab_views_login_top/day, name:page_tab_views_login_top, period:day,…}
+14: {id:PAGE_ID/insights/page_tab_views_login_top/week, name:page_tab_views_login_top, period:week,…}
+15: {id:PAGE_ID/insights/page_tab_views_logout_top/day, name:page_tab_views_logout_top, period:day,…}
+16: {id:PAGE_ID/insights/page_views_internal_referrals/day, name:page_views_internal_referrals,…}
+17: {id:PAGE_ID/insights/page_views_external_referrals/day, name:page_views_external_referrals,…}
+18: {id:PAGE_ID/insights/page_story_adds_unique/day, name:page_story_adds_unique, period:day,…}
+19: {id:PAGE_ID/insights/page_story_adds_unique/week, name:page_story_adds_unique, period:week,…}
+20: {id:PAGE_ID/insights/page_story_adds_unique/days_28, name:page_story_adds_unique, period:days_28,…}
+21: {id:PAGE_ID/insights/page_story_adds/day, name:page_story_adds, period:day,…}
+22: {id:PAGE_ID/insights/page_story_adds/week, name:page_story_adds, period:week,…}
+23: {id:PAGE_ID/insights/page_story_adds/days_28, name:page_story_adds, period:days_28,…}
+24: {id:PAGE_ID/insights/page_story_adds_by_story_type_unique/day,…}
+25: {id:PAGE_ID/insights/page_story_adds_by_story_type_unique/week,…}
+26: {id:PAGE_ID/insights/page_story_adds_by_story_type_unique/days_28,…}
+27: {id:PAGE_ID/insights/page_story_adds_by_story_type/day, name:page_story_adds_by_story_type,…}
+28: {id:PAGE_ID/insights/page_story_adds_by_story_type/week, name:page_story_adds_by_story_type,…}
+29: {id:PAGE_ID/insights/page_story_adds_by_story_type/days_28, name:page_story_adds_by_story_type,…}
+30: {id:PAGE_ID/insights/page_impressions_by_age_gender_unique/day,…}
+31: {id:PAGE_ID/insights/page_impressions_by_age_gender_unique/week,…}
+32: {id:PAGE_ID/insights/page_impressions_by_age_gender_unique/days_28,…}
+33: {id:PAGE_ID/insights/page_impressions_by_country_unique/day,…}
+34: {id:PAGE_ID/insights/page_impressions_by_country_unique/week,…}
+35: {id:PAGE_ID/insights/page_impressions_by_country_unique/days_28,…}
+36: {id:PAGE_ID/insights/page_impressions_by_locale_unique/day,…}
+37: {id:PAGE_ID/insights/page_impressions_by_locale_unique/week,…}
+38: {id:PAGE_ID/insights/page_impressions_by_locale_unique/days_28,…}
+39: {id:PAGE_ID/insights/page_impressions_by_city_unique/day, name:page_impressions_by_city_unique,…}
+40: {id:PAGE_ID/insights/page_impressions_by_city_unique/week, name:page_impressions_by_city_unique,…}
+41: {id:PAGE_ID/insights/page_impressions_by_city_unique/days_28,…}
+42: {id:PAGE_ID/insights/page_story_adds_by_age_gender_unique/day,…}
+43: {id:PAGE_ID/insights/page_story_adds_by_age_gender_unique/week,…}
+44: {id:PAGE_ID/insights/page_story_adds_by_age_gender_unique/days_28,…}
+45: {id:PAGE_ID/insights/page_story_adds_by_country_unique/day,…}
+46: {id:PAGE_ID/insights/page_story_adds_by_country_unique/week,…}
+47: {id:PAGE_ID/insights/page_story_adds_by_country_unique/days_28,…}
+48: {id:PAGE_ID/insights/page_story_adds_by_city_unique/day, name:page_story_adds_by_city_unique,…}
+49: {id:PAGE_ID/insights/page_story_adds_by_city_unique/week, name:page_story_adds_by_city_unique,…}
+50: {id:PAGE_ID/insights/page_story_adds_by_city_unique/days_28, name:page_story_adds_by_city_unique,…}
+51: {id:PAGE_ID/insights/page_story_adds_by_locale_unique/day, name:page_story_adds_by_locale_unique,…}
+52: {id:PAGE_ID/insights/page_story_adds_by_locale_unique/week, name:page_story_adds_by_locale_unique,…}
+53: {id:PAGE_ID/insights/page_story_adds_by_locale_unique/days_28,…}
+54: {id:PAGE_ID/insights/page_impressions_unique/day, name:page_impressions_unique, period:day,…}
+55: {id:PAGE_ID/insights/page_impressions_unique/week, name:page_impressions_unique, period:week,…}
+56: {id:PAGE_ID/insights/page_impressions_unique/days_28, name:page_impressions_unique,…}
+57: {id:PAGE_ID/insights/page_impressions/day, name:page_impressions, period:day,…}
+58: {id:PAGE_ID/insights/page_impressions/week, name:page_impressions, period:week,…}
+59: {id:PAGE_ID/insights/page_impressions/days_28, name:page_impressions, period:days_28,…}
+60: {id:PAGE_ID/insights/page_impressions_paid_unique/day, name:page_impressions_paid_unique,…}
+61: {id:PAGE_ID/insights/page_impressions_paid_unique/week, name:page_impressions_paid_unique,…}
+62: {id:PAGE_ID/insights/page_impressions_paid_unique/days_28, name:page_impressions_paid_unique,…}
+63: {id:PAGE_ID/insights/page_impressions_paid/day, name:page_impressions_paid, period:day,…}
+64: {id:PAGE_ID/insights/page_impressions_paid/week, name:page_impressions_paid, period:week,…}
+65: {id:PAGE_ID/insights/page_impressions_paid/days_28, name:page_impressions_paid, period:days_28,…}
+66: {id:PAGE_ID/insights/page_impressions_organic_unique/day, name:page_impressions_organic_unique,…}
+67: {id:PAGE_ID/insights/page_impressions_organic_unique/week, name:page_impressions_organic_unique,…}
+68: {id:PAGE_ID/insights/page_impressions_organic_unique/days_28,…}
+69: {id:PAGE_ID/insights/page_impressions_organic/day, name:page_impressions_organic, period:day,…}
+70: {id:PAGE_ID/insights/page_impressions_organic/week, name:page_impressions_organic, period:week,…}
+71: {id:PAGE_ID/insights/page_impressions_organic/days_28, name:page_impressions_organic,…}
+72: {id:PAGE_ID/insights/page_impressions_viral_unique/day, name:page_impressions_viral_unique,…}
+73: {id:PAGE_ID/insights/page_impressions_viral_unique/week, name:page_impressions_viral_unique,…}
+74: {id:PAGE_ID/insights/page_impressions_viral_unique/days_28, name:page_impressions_viral_unique,…}
+75: {id:PAGE_ID/insights/page_impressions_viral/day, name:page_impressions_viral, period:day,…}
+76: {id:PAGE_ID/insights/page_impressions_viral/week, name:page_impressions_viral, period:week,…}
+77: {id:PAGE_ID/insights/page_impressions_viral/days_28, name:page_impressions_viral, period:days_28,…}
+78: {id:PAGE_ID/insights/page_impressions_by_story_type_unique/day,…}
+79: {id:PAGE_ID/insights/page_impressions_by_story_type_unique/week,…}
+80: {id:PAGE_ID/insights/page_impressions_by_story_type_unique/days_28,…}
+81: {id:PAGE_ID/insights/page_impressions_by_story_type/day, name:page_impressions_by_story_type,…}
+82: {id:PAGE_ID/insights/page_impressions_by_story_type/week, name:page_impressions_by_story_type,…}
+83: {id:PAGE_ID/insights/page_impressions_by_story_type/days_28, name:page_impressions_by_story_type,…}
+84: {id:PAGE_ID/insights/page_impressions_by_paid_non_paid_unique/day,…}
+85: {id:PAGE_ID/insights/page_impressions_by_paid_non_paid_unique/week,…}
+86: {id:PAGE_ID/insights/page_impressions_by_paid_non_paid_unique/days_28,…}
+87: {id:PAGE_ID/insights/page_impressions_by_paid_non_paid/day,…}
+88: {id:PAGE_ID/insights/page_impressions_by_paid_non_paid/week,…}
+89: {id:PAGE_ID/insights/page_impressions_by_paid_non_paid/days_28,…}
+90: {id:PAGE_ID/insights/page_places_checkin_total/day, name:page_places_checkin_total, period:day,…}
+91: {id:PAGE_ID/insights/page_places_checkin_total/week, name:page_places_checkin_total, period:week,…}
+92: {id:PAGE_ID/insights/page_places_checkin_total/days_28, name:page_places_checkin_total,…}
+93: {id:PAGE_ID/insights/page_places_checkin_total_unique/day, name:page_places_checkin_total_unique,…}
+94: {id:PAGE_ID/insights/page_places_checkin_total_unique/week, name:page_places_checkin_total_unique,…}
+95: {id:PAGE_ID/insights/page_places_checkin_total_unique/days_28,…}
+96: {id:PAGE_ID/insights/page_places_checkin_mobile/day, name:page_places_checkin_mobile, period:day,…}
+97: {id:PAGE_ID/insights/page_places_checkin_mobile/week, name:page_places_checkin_mobile,…}
+98: {id:PAGE_ID/insights/page_places_checkin_mobile/days_28, name:page_places_checkin_mobile,…}
+99: {id:PAGE_ID/insights/page_places_checkin_mobile_unique/day,…}
+100: {id:PAGE_ID/insights/page_places_checkin_mobile_unique/week,…}
+101: {id:PAGE_ID/insights/page_places_checkin_mobile_unique/days_28,…}
+102: {id:PAGE_ID/insights/page_places_checkins_by_age_gender/day,…}
+103: {id:PAGE_ID/insights/page_places_checkins_by_country/day, name:page_places_checkins_by_country,…}
+104: {id:PAGE_ID/insights/page_places_checkins_by_city/day, name:page_places_checkins_by_city,…}
+105: {id:PAGE_ID/insights/page_places_checkins_by_locale/day, name:page_places_checkins_by_locale,…}
+106: {id:PAGE_ID/insights/page_places_checkins_mobile_by_age_gender/day,…}
+107: {id:PAGE_ID/insights/page_places_checkins_mobile_by_country/day,…}
+108: {id:PAGE_ID/insights/page_places_checkins_mobile_by_city/day,…}
+109: {id:PAGE_ID/insights/page_places_checkins_mobile_by_locale/day,…}
+110: {id:PAGE_ID/insights/page_posts_impressions_unique/day, name:page_posts_impressions_unique,…}
+111: {id:PAGE_ID/insights/page_posts_impressions_unique/week, name:page_posts_impressions_unique,…}
+112: {id:PAGE_ID/insights/page_posts_impressions_unique/days_28, name:page_posts_impressions_unique,…}
+113: {id:PAGE_ID/insights/page_posts_impressions/day, name:page_posts_impressions, period:day,…}
+114: {id:PAGE_ID/insights/page_posts_impressions/week, name:page_posts_impressions, period:week,…}
+115: {id:PAGE_ID/insights/page_posts_impressions/days_28, name:page_posts_impressions, period:days_28,…}
+116: {id:PAGE_ID/insights/page_posts_impressions_paid_unique/day,…}
+117: {id:PAGE_ID/insights/page_posts_impressions_paid_unique/week,…}
+118: {id:PAGE_ID/insights/page_posts_impressions_paid_unique/days_28,…}
+119: {id:PAGE_ID/insights/page_posts_impressions_paid/day, name:page_posts_impressions_paid,…}
+120: {id:PAGE_ID/insights/page_posts_impressions_paid/week, name:page_posts_impressions_paid,…}
+121: {id:PAGE_ID/insights/page_posts_impressions_paid/days_28, name:page_posts_impressions_paid,…}
+122: {id:PAGE_ID/insights/page_posts_impressions_organic_unique/day,…}
+123: {id:PAGE_ID/insights/page_posts_impressions_organic_unique/week,…}
+124: {id:PAGE_ID/insights/page_posts_impressions_organic_unique/days_28,…}
+125: {id:PAGE_ID/insights/page_posts_impressions_organic/day, name:page_posts_impressions_organic,…}
+126: {id:PAGE_ID/insights/page_posts_impressions_organic/week, name:page_posts_impressions_organic,…}
+127: {id:PAGE_ID/insights/page_posts_impressions_organic/days_28, name:page_posts_impressions_organic,…}
+128: {id:PAGE_ID/insights/page_posts_impressions_viral_unique/day,…}
+129: {id:PAGE_ID/insights/page_posts_impressions_viral_unique/week,…}
+130: {id:PAGE_ID/insights/page_posts_impressions_viral_unique/days_28,…}
+131: {id:PAGE_ID/insights/page_posts_impressions_viral/day, name:page_posts_impressions_viral,…}
+132: {id:PAGE_ID/insights/page_posts_impressions_viral/week, name:page_posts_impressions_viral,…}
+133: {id:PAGE_ID/insights/page_posts_impressions_viral/days_28, name:page_posts_impressions_viral,…}
+134: {id:PAGE_ID/insights/page_posts_impressions_by_paid_non_paid_unique/day,…}
+135: {id:PAGE_ID/insights/page_posts_impressions_by_paid_non_paid_unique/week,…}
+136: {id:PAGE_ID/insights/page_posts_impressions_by_paid_non_paid_unique/days_28,…}
+137: {id:PAGE_ID/insights/page_posts_impressions_by_paid_non_paid/day,…}
+138: {id:PAGE_ID/insights/page_posts_impressions_by_paid_non_paid/week,…}
+139: {id:PAGE_ID/insights/page_posts_impressions_by_paid_non_paid/days_28,…}
+140: {id:PAGE_ID/insights/page_consumptions_unique/day, name:page_consumptions_unique, period:day,…}
+141: {id:PAGE_ID/insights/page_consumptions_unique/week, name:page_consumptions_unique, period:week,…}
+142: {id:PAGE_ID/insights/page_consumptions_unique/days_28, name:page_consumptions_unique,…}
+143: {id:PAGE_ID/insights/page_consumptions/day, name:page_consumptions, period:day,…}
+144: {id:PAGE_ID/insights/page_consumptions/week, name:page_consumptions, period:week,…}
+145: {id:PAGE_ID/insights/page_consumptions/days_28, name:page_consumptions, period:days_28,…}
+146: {id:PAGE_ID/insights/page_consumptions_by_consumption_type_unique/day,…}
+147: {id:PAGE_ID/insights/page_consumptions_by_consumption_type_unique/week,…}
+148: {id:PAGE_ID/insights/page_consumptions_by_consumption_type_unique/days_28,…}
+149: {id:PAGE_ID/insights/page_consumptions_by_consumption_type/day,…}
+150: {id:PAGE_ID/insights/page_consumptions_by_consumption_type/week,…}
+151: {id:PAGE_ID/insights/page_consumptions_by_consumption_type/days_28,…}
+152: {id:PAGE_ID/insights/page_fans_by_like_source_unique/day, name:page_fans_by_like_source_unique,…}
+153: {id:PAGE_ID/insights/page_fans_by_like_source/day, name:page_fans_by_like_source, period:day,…}
+154: {id:PAGE_ID/insights/page_fans_by_unlike_source_unique/day,…}
+155: {id:PAGE_ID/insights/page_fans_by_unlike_source/day, name:page_fans_by_unlike_source, period:day,…}
+156: {id:PAGE_ID/insights/page_negative_feedback_unique/day, name:page_negative_feedback_unique,…}
+157: {id:PAGE_ID/insights/page_negative_feedback_unique/week, name:page_negative_feedback_unique,…}
+158: {id:PAGE_ID/insights/page_negative_feedback_unique/days_28, name:page_negative_feedback_unique,…}
+159: {id:PAGE_ID/insights/page_negative_feedback/day, name:page_negative_feedback, period:day,…}
+160: {id:PAGE_ID/insights/page_negative_feedback/week, name:page_negative_feedback, period:week,…}
+161: {id:PAGE_ID/insights/page_negative_feedback/days_28, name:page_negative_feedback, period:days_28,…}
+162: {id:PAGE_ID/insights/page_negative_feedback_by_type_unique/day,…}
+163: {id:PAGE_ID/insights/page_negative_feedback_by_type_unique/week,…}
+164: {id:PAGE_ID/insights/page_negative_feedback_by_type_unique/days_28,…}
+165: {id:PAGE_ID/insights/page_negative_feedback_by_type/day, name:page_negative_feedback_by_type,…}
+166: {id:PAGE_ID/insights/page_negative_feedback_by_type/week, name:page_negative_feedback_by_type,…}
+167: {id:PAGE_ID/insights/page_negative_feedback_by_type/days_28, name:page_negative_feedback_by_type,…}
+168: {id:PAGE_ID/insights/page_positive_feedback_by_type_unique/day,…}
+169: {id:PAGE_ID/insights/page_positive_feedback_by_type_unique/week,…}
+170: {id:PAGE_ID/insights/page_positive_feedback_by_type_unique/days_28,…}
+171: {id:PAGE_ID/insights/page_positive_feedback_by_type/day, name:page_positive_feedback_by_type,…}
+172: {id:PAGE_ID/insights/page_positive_feedback_by_type/week, name:page_positive_feedback_by_type,…}
+173: {id:PAGE_ID/insights/page_positive_feedback_by_type/days_28, name:page_positive_feedback_by_type,…}
+174: {id:PAGE_ID/insights/page_fans/lifetime, name:page_fans, period:lifetime,…}
+175: {id:PAGE_ID/insights/page_fans_locale/lifetime, name:page_fans_locale, period:lifetime,…}
+176: {id:PAGE_ID/insights/page_fans_city/lifetime, name:page_fans_city, period:lifetime, values:[{,…}],…}
+177: {id:PAGE_ID/insights/page_fans_country/lifetime, name:page_fans_country, period:lifetime,…}
+178: {id:PAGE_ID/insights/page_fans_gender/lifetime, name:page_fans_gender, period:lifetime,…}
+179: {id:PAGE_ID/insights/page_fans_age/lifetime, name:page_fans_age, period:lifetime,…}
+180: {id:PAGE_ID/insights/page_fans_gender_age/lifetime, name:page_fans_gender_age, period:lifetime,…}
+181: {id:PAGE_ID/insights/page_storytellers/day, name:page_storytellers, period:day,…}
+182: {id:PAGE_ID/insights/page_storytellers/week, name:page_storytellers, period:week,…}
+183: {id:PAGE_ID/insights/page_storytellers/days_28, name:page_storytellers, period:days_28,…}
+184: {id:PAGE_ID/insights/page_storytellers_by_story_type/day, name:page_storytellers_by_story_type,…}
+185: {id:PAGE_ID/insights/page_storytellers_by_story_type/week, name:page_storytellers_by_story_type,…}
+186: {id:PAGE_ID/insights/page_storytellers_by_story_type/days_28,…}
+187: {id:PAGE_ID/insights/page_storytellers_by_age_gender/day, name:page_storytellers_by_age_gender,…}
+188: {id:PAGE_ID/insights/page_storytellers_by_age_gender/week, name:page_storytellers_by_age_gender,…}
+189: {id:PAGE_ID/insights/page_storytellers_by_age_gender/days_28,…}
+190: {id:PAGE_ID/insights/page_storytellers_by_country/day, name:page_storytellers_by_country,…}
+191: {id:PAGE_ID/insights/page_storytellers_by_country/week, name:page_storytellers_by_country,…}
+192: {id:PAGE_ID/insights/page_storytellers_by_country/days_28, name:page_storytellers_by_country,…}
+193: {id:PAGE_ID/insights/page_storytellers_by_city/day, name:page_storytellers_by_city, period:day,…}
+194: {id:PAGE_ID/insights/page_storytellers_by_city/week, name:page_storytellers_by_city, period:week,…}
+195: {id:PAGE_ID/insights/page_storytellers_by_city/days_28, name:page_storytellers_by_city,…}
+196: {id:PAGE_ID/insights/page_storytellers_by_locale/day, name:page_storytellers_by_locale,…}
+197: {id:PAGE_ID/insights/page_storytellers_by_locale/week, name:page_storytellers_by_locale,…}
+198: {id:PAGE_ID/insights/page_storytellers_by_locale/days_28, name:page_storytellers_by_locale,…}
+199: {id:PAGE_ID/insights/page_engaged_users/day, name:page_engaged_users, period:day,…}
+200: {id:PAGE_ID/insights/page_engaged_users/week, name:page_engaged_users, period:week,…}
+201: {id:PAGE_ID/insights/page_engaged_users/days_28, name:page_engaged_users, period:days_28,…}
+202: {id:PAGE_ID/insights/page_impressions_frequency_distribution/day,…}
+203: {id:PAGE_ID/insights/page_impressions_frequency_distribution/week,…}
+204: {id:PAGE_ID/insights/page_impressions_frequency_distribution/days_28,…}
+205: {id:PAGE_ID/insights/page_impressions_viral_frequency_distribution/day,…}
+206: {id:PAGE_ID/insights/page_impressions_viral_frequency_distribution/week,…}
+207: {id:PAGE_ID/insights/page_impressions_viral_frequency_distribution/days_28,…}
+208: {id:PAGE_ID/insights/page_posts_impressions_frequency_distribution/day,…}
+209: {id:PAGE_ID/insights/page_posts_impressions_frequency_distribution/week,…}
+210: {id:PAGE_ID/insights/page_posts_impressions_frequency_distribution/days_28,…}
+211: {id:PAGE_ID/insights/page_views_unique/day, name:page_views_unique, period:day,…}
+212: {id:PAGE_ID/insights/page_views_unique/week, name:page_views_unique, period:week,…}
+213: {id:PAGE_ID/insights/page_stories/day, name:page_stories, period:day,…}
+214: {id:PAGE_ID/insights/page_stories/week, name:page_stories, period:week,…}
+215: {id:PAGE_ID/insights/page_stories/days_28, name:page_stories, period:days_28,…}
+216: {id:PAGE_ID/insights/page_stories_by_story_type/day, name:page_stories_by_story_type, period:day,…}
+217: {id:PAGE_ID/insights/page_stories_by_story_type/week, name:page_stories_by_story_type,…}
+218: {id:PAGE_ID/insights/page_stories_by_story_type/days_28, name:page_stories_by_story_type,…}
+219: {id:PAGE_ID/insights/page_admin_num_posts/day, name:page_admin_num_posts, period:day,…}
+220: {id:PAGE_ID/insights/page_admin_num_posts/week, name:page_admin_num_posts, period:week,…}
+221: {id:PAGE_ID/insights/page_admin_num_posts_by_type/day, name:page_admin_num_posts_by_type,…}
+222: {id:PAGE_ID/insights/page_admin_num_posts_by_type/week, name:page_admin_num_posts_by_type,…}
