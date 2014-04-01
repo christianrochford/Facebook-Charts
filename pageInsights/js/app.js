@@ -84,6 +84,7 @@ window.fbAsyncInit = function() {
           console.log('page does not exist, please enter again');
         }
       }
+      // Should not declare client secret on client side. Move to server side!!!!
       getPermToken = 'https://graph.facebook.com/oauth/access_token?client_id=742372512461807&client_secret=46ec273f59ca4891c8ece95e2bec105e&grant_type=fb_exchange_token&fb_exchange_token=' + userAccessToken;
       $.ajax({
         async: false,
