@@ -16,8 +16,6 @@
          <input type="submit" id="submit" class="button">
       </div>
       <div id="labels">
-        <p>Post</p>
-        <p>Likes</p>
         <p class="button" id="logOut">Log Out</p>
       </div>
       <div id="feed"></div>
