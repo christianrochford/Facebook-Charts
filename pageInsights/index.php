@@ -19,10 +19,11 @@
         <p id="total-fans"></p>
         <p id="new-fans"></p>
         <p id="lost-fans"></p>
-        <p id="post-impressions-day"></p>
         <p id="organic-impressions-day"></p>
         <p id="viral-impressions-day"></p>
+        <p id="consumers"></p>
         <p id="engaged-users"></p>
+        <p id="post-engagement-rate"></p>
         <p id="positive-feedback"></p>
         <p id="negative-feedback"></p>
       </div>

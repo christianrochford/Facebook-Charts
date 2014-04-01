@@ -132,14 +132,6 @@ window.fbAsyncInit = function() {
       lostFans = Math.round(lostFans / insightsData.data[3].values.length);
       $('#lost-fans').text(insightsData.data[3].title + ': ' + lostFans);
 
-      // Get post impressions/day
-      postImpressions = 0;
-      for(i=0, len=insightsData.data[110].values.length; i<len; i++){
-        postImpressions += parseInt(insightsData.data[110].values[i].value);
-      }
-      postImpressions = Math.round(postImpressions / insightsData.data[110].values.length);
-      $('#post-impressions-day').text(insightsData.data[110].title + ': ' + postImpressions);
-
       // Get organic post impressions/day
       organicImpressions = 0;
       for(i=0, len=insightsData.data[66].values.length; i<len; i++){
@@ -163,6 +155,18 @@ window.fbAsyncInit = function() {
       }
       engagedUsers = Math.round(engagedUsers / insightsData.data[202].values.length);
       $('#engaged-users').text(insightsData.data[201].title + ': ' + engagedUsers);
+
+      // Get total consumers/day
+      consumers = 0;
+      for(i=0, len=insightsData.data[140].values.length; i<len; i++){
+        consumers += parseInt(insightsData.data[140].values[i].value);
+      }
+      consumers = Math.round(consumers / insightsData.data[140].values.length);
+      $('#consumers').text(insightsData.data[140].title + ': ' + consumers);
+
+      // Get post-engagement-rate
+      postEngagement = Math.round((consumers / totalFans) * 10000) / 100;
+      $('#post-engagement-rate').text('Post Engagement Rate: ' + postEngagement + '%'); 
 
       // Get positive feedback/day
       posFeedback = 0;
