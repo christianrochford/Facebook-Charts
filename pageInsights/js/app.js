@@ -70,6 +70,7 @@ window.fbAsyncInit = function() {
   data = '';
   $(document).ready(function() {
     $('#submit').on('click', function() {
+      $('#feed p').fadeIn(300);
       fbUrl = 'https://graph.facebook.com/';
       pageName = $('#input').val();
       pageID = '';
@@ -95,7 +96,7 @@ window.fbAsyncInit = function() {
           permToken = response;
         }
       })
-      insight = '/insights/?method=GET&format=json&suppress_http_code=1&';
+      insight = '/insights?until=1396445517&since=1394631310&method=GET&format=json&suppress_http_code=1&';
       // Build url based on data obtained from pages array
       url = fbUrl + pageID + insight + permToken;
       console.log(url);
@@ -105,10 +106,80 @@ window.fbAsyncInit = function() {
         type: 'GET',
         data: '',
         success: function(response) {
-          data = response;
+          insightsData = response;
         }
       })
-      console.log(data);
+      console.log(insightsData);
+
+      // Get total fans
+      totalFansLength = insightsData.data[174].values.length -1;
+      totalFans = insightsData.data[174].values[totalFansLength].value;
+      $('#total-fans').text(insightsData.data[174].title + ': ' + totalFans);
+
+      //Get new fans/day
+      newFans = 0;
+      for(i=0, len=insightsData.data[0].values.length; i<len; i++){
+        newFans += parseInt(insightsData.data[0].values[i].value);
+      }
+      newFans = Math.round(newFans / insightsData.data[0].values.length);
+      $('#new-fans').text(insightsData.data[0].title + ': ' + newFans);
+
+      // Get lost fans/day
+      lostFans = 0;
+      for(i=0, len=insightsData.data[3].values.length; i<len; i++){
+        lostFans += parseInt(insightsData.data[3].values[i].value);
+      }
+      lostFans = Math.round(lostFans / insightsData.data[3].values.length);
+      $('#lost-fans').text(insightsData.data[3].title + ': ' + lostFans);
+
+      // Get post impressions/day
+      postImpressions = 0;
+      for(i=0, len=insightsData.data[110].values.length; i<len; i++){
+        postImpressions += parseInt(insightsData.data[110].values[i].value);
+      }
+      postImpressions = Math.round(postImpressions / insightsData.data[110].values.length);
+      $('#post-impressions-day').text(insightsData.data[110].title + ': ' + postImpressions);
+
+      // Get organic post impressions/day
+      organicImpressions = 0;
+      for(i=0, len=insightsData.data[66].values.length; i<len; i++){
+        organicImpressions += parseInt(insightsData.data[66].values[i].value);
+      }
+      organicImpressions = Math.round(organicImpressions / insightsData.data[110].values.length);
+      $('#organic-impressions-day').text(insightsData.data[110].title + ': ' + organicImpressions);
+
+      // Get viral post impressions/day
+      viralImpressions = 0;
+      for(i=0, len=insightsData.data[72].values.length; i<len; i++){
+        viralImpressions += parseInt(insightsData.data[72].values[i].value);
+      }
+      viralImpressions = Math.round(viralImpressions / insightsData.data[72].values.length);
+      $('#viral-impressions-day').text(insightsData.data[72].title + ': ' + viralImpressions);
+
+      // Get engaged users/day
+      engagedUsers = 0;
+      for(i=0, len=insightsData.data[201].values.length; i<len; i++){
+        engagedUsers += parseInt(insightsData.data[201].values[i].value);
+      }
+      engagedUsers = Math.round(engagedUsers / insightsData.data[202].values.length);
+      $('#engaged-users').text(insightsData.data[201].title + ': ' + engagedUsers);
+
+      // Get positive feedback/day
+      posFeedback = 0;
+      for(i=0, len=insightsData.data[168].values.length; i<len; i++){
+        posFeedback += parseInt(insightsData.data[168].values[i].value.like);
+      }
+      posFeedback = Math.round(posFeedback / insightsData.data[168].values.length);
+      $('#positive-feedback').text(insightsData.data[168].title + ': ' + posFeedback);
+
+      // Get negative feedback/day
+      negFeedback = 0;
+      for(i=0, len=insightsData.data[156].values.length; i<len; i++){
+        negFeedback += parseInt(insightsData.data[156].values[i].value);
+      }
+      negFeedback = Math.round(negFeedback / insightsData.data[156].values.length);
+      $('#negative-feedback').text(insightsData.data[156].title + ': ' + negFeedback);
+
     })
   })
 

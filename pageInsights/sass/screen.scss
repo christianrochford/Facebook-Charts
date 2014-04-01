@@ -76,9 +76,10 @@ $orange: #ff3300;
 #feed{
   width: 707px;
   float: left;
-  .post, .like{
-    display: block;
-    width: 224px;
+  margin: 20px 0;
+  p{
+    display: none;
+    width: 460px;
     height: 30px;
     float: left;
     margin: 0 2px 1px;

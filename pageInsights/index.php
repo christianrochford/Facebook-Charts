@@ -15,18 +15,25 @@
          <input type="text" name="page" id="input" placeholder="Page Name">
          <input type="submit" id="submit" class="button">
       </div>
+      <div id="feed">
+        <p id="total-fans"></p>
+        <p id="new-fans"></p>
+        <p id="lost-fans"></p>
+        <p id="post-impressions-day"></p>
+        <p id="organic-impressions-day"></p>
+        <p id="viral-impressions-day"></p>
+        <p id="engaged-users"></p>
+        <p id="positive-feedback"></p>
+        <p id="negative-feedback"></p>
+      </div>
       <div id="labels">
         <p class="button" id="logOut">Log Out</p>
       </div>
-      <div id="feed"></div>
     </div>
   </div>
 
   <!- Load Facebook SDK ->
   <div id="fb-root"></div>
-    <script>
-      
-    </script>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="https://www.google.com/jsapi"></script>
