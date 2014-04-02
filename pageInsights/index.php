@@ -1,3 +1,6 @@
+<?php
+include 'app_details.php';
+?>
 <!doctype html>
 <html lang="en">
 <head>
